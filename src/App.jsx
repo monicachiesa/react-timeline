@@ -1,5 +1,6 @@
 import { Header } from "./components/Header";
 import styles from "./App.module.css";
+import { Post } from "./components/Post";
 
 import "./global.css";
 import { Sidebar } from "./components/Sidebar";
@@ -9,9 +10,12 @@ function App() {
     <div>
       <Header />
 
-      <div className="wrapper">
+      <div className={styles.wrapper}>
         <Sidebar />
-        <main></main>
+        <main>
+<Post />
+
+        </main>
       </div>
     </div>
   );
